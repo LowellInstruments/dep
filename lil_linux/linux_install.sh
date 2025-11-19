@@ -47,6 +47,6 @@ sudo wget -q --show-progress $DEP_RAW_NO_BIN/icon_li_transparent.svg \
 
 
 echo; echo -e "\033[1;34mDesktop file\033[0m"
-sudo wget -q --show-progress $DEP_RAW_NO_BIN/lil_linux.Desktop \
+sudo wget -q --show-progress $DEP_RAW_NO_BIN/lil_linux.desktop \
     /usr/share/applications
 

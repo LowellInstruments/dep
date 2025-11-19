@@ -2,18 +2,13 @@
 [Desktop Entry]
 
 
-# -----------------------------
-# copy this .desktop file to
-# /usr/share/applications
-# -----------------------------
-
 Type=Application
 Name=LIL_linux
 # Tooltip comment to show in menus.
 Comment=Lowell Instruments LIL on Linux
 
 # The path (folder) in which the executable is run
-Path=/home/kaz/PycharmProjects/lil/src/lil/dist
+Path=/opt/lil_linux
 
 # The executable (can include arguments)
 Exec=lil_linux.bin
