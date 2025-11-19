@@ -4,12 +4,9 @@ clear
 echo
 
 
-Can ~/.local/share/applications override /usr/ ...
-
-
 # ------------------------------------------------------------------------------------------------------
 # you get ths installer via
-# https://raw.githubusercontent.com/LowellInstruments/dep/refs/heads/main/lil_linux/linux_install | sh
+# curl https://raw.githubusercontent.com/LowellInstruments/dep/refs/heads/main/lil_linux/linux_install | sh
 # ------------------------------------------------------------------------------------------------------
 
 
@@ -28,13 +25,16 @@ echo "--------------------"
 echo; echo "lil_linux.bin file"
 mkdir "$FOL" || true
 cd "$FOL" || (echo "error, failed to create dir, leaving"; exit 1)
+rm lil_linux.bin
 wget $DEP/lil_linux.bin
 
 
 echo; echo "svg icon"
+rm icon_li_transparent.svg
 wget $DEP/icon_li_transparent.svg
 
 
 echo; echo "Desktop file"
+rm lil_linux.Desktop
 wget $DEP/lil_linux.Desktop
 
