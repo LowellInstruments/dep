@@ -2,16 +2,21 @@
 [Desktop Entry]
 
 
+# -------------------------------------
+# this is auto-installed by script
+# linux_install.sh
+# -------------------------------------
+
+
 Type=Application
 Name=LIL_linux
+
 # Tooltip comment to show in menus.
 Comment=Lowell Instruments LIL on Linux
 
-# The path (folder) in which the executable is run
+# folder in which the executable is run
 Path=/opt/lil_linux
 
-# The executable (can include arguments)
 Exec=lil_linux.bin
 
-# if its a .svg, you can put your icon in /usr/share/icons/hicolor/scalable/apps
 Icon=/usr/share/icons/hicolor/scalable/apps/icon_li_transparent.svg
