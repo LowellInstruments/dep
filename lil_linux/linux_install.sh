@@ -22,16 +22,16 @@ echo "LIL linux installer v3"
 echo "--------------------"
 
 
-echo "This script requires root privileges to run certain commands."
+echo "Installing requires root privileges."
 sudo -v
 rv=$?
 if [ $rv -ne 0 ]; then
-    echo "Incorrect password or root access denied. Exiting."
+    echo -e "\033[1;33mIncorrect password or root access denied.\033[0m"
     exit 1
 fi
 
 
-# either to /opt/lil_linux or $HOME
+
 echo; echo -e "\033[1;34mlil_linux.bin file\033[0m"
 sudo rm -rf "$FOL"
 sudo mkdir "$FOL" || true
