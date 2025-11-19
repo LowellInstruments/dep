@@ -18,7 +18,7 @@ FOL=/opt/lil_linux
 
 
 echo "--------------------"
-echo "LIL linux installer v2"
+echo "LIL linux installer v3"
 echo "--------------------"
 
 
@@ -36,16 +36,17 @@ echo; echo -e "\033[1;34mlil_linux.bin file\033[0m"
 sudo rm -rf "$FOL"
 sudo mkdir "$FOL" || true
 cd "$FOL" || (echo "error, failed to create dir, leaving"; exit 1)
-sudo wget -q --show-progress $DEP_RAW_BIN -O $FOL
+sudo wget -q --show-progress $DEP_RAW_BIN \
+    -O $FOL/lil_linux.bin
 
 
 echo; echo -e "\033[1;34msvg icon\033[0m"
-sudo wget -q --show-progress $DEP_RAW_NO_BIN/icon_li_transparent.svg -O $FOL
-sudo cp icon_li_transparent /usr/share/icons/hicolor/scalable/apps
+sudo wget -q --show-progress $DEP_RAW_NO_BIN/icon_li_transparent.svg \
+    -O /usr/share/icons/hicolor/scalable/apps/icon_li_transparent.svg
 
 
 
 echo; echo -e "\033[1;34mDesktop file\033[0m"
-sudo wget -q --show-progress $DEP_RAW_NO_BIN/lil_linux.Desktop $FOL
-sudo cp lil_linux.Desktop /usr/share/applications
+sudo wget -q --show-progress $DEP_RAW_NO_BIN/lil_linux.Desktop \
+    /usr/share/applications
 
