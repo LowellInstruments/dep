@@ -22,17 +22,17 @@ echo "--------------------"
 
 
 # either to /opt/lil_linux or $HOME
-echo; echo "lil_linux.bin file"
+echo; echo "\033[1;34mlil_linux.bin file\033[0m"
 rm -rf $FOL
 mkdir "$FOL" || true
 cd "$FOL" || (echo "error, failed to create dir, leaving"; exit 1)
-wget $DEP/lil_linux.bin
+wget -q --show-progress $DEP/lil_linux.bin
 
 
-echo; echo "svg icon"
-wget $DEP/icon_li_transparent.svg
+echo; echo "\033[1;34msvg icon\033[0m"
+wget -q --show-progress $DEP/icon_li_transparent.svg
 
 
-echo; echo "Desktop file"
-wget $DEP/lil_linux.Desktop
+echo; echo "\033[1;34mDesktop file\033[0m"
+wget -q --show-progress $DEP/lil_linux.Desktop
 
