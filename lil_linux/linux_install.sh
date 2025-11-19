@@ -17,7 +17,7 @@ FOL=$HOME/.local/lil_linux
 
 
 echo "--------------------"
-echo "LIL linux installer"
+echo "LIL linux installer v1"
 echo "--------------------"
 
 
