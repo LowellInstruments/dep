@@ -17,9 +17,9 @@ FOL=/opt/lil_linux
 
 
 
-echo -e "\033[1;34m-------------------\033[0m"
-echo -e "\033[1;34mLIL linux installer\033[0m"
-echo -e "\033[1;34m-------------------\033[0m"
+echo -e "\033[1;34m-----------------------\033[0m"
+echo -e "\033[1;34mLIL linux installer v05\033[0m"
+echo -e "\033[1;34m-----------------------\033[0m"
 
 
 echo
@@ -39,6 +39,7 @@ sudo mkdir "$FOL" || true
 cd "$FOL" || (echo "error, failed to create dir, leaving"; exit 1)
 sudo wget -q --show-progress $DEP_RAW_BIN \
     -O $FOL/lil_linux.bin
+sudo chmod 755 $FOL/lil_linux.bin
 
 
 echo; echo -e "\033[1;34msvg icon\033[0m"
@@ -50,4 +51,5 @@ sudo wget -q --show-progress $DEP_RAW_NO_BIN/icon_li_transparent.svg \
 echo; echo -e "\033[1;34mDesktop file\033[0m"
 sudo wget -q --show-progress $DEP_RAW_NO_BIN/lil_linux.desktop \
     -O /usr/share/applications/lil_linux.desktop
+sudo chmod 755 /usr/share/applications/lil_linux.desktop
 
