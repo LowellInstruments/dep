@@ -17,9 +17,9 @@ FOL=/opt/lil_linux
 
 
 
-echo "--------------------"
-echo "LIL linux installer v3"
-echo "--------------------"
+echo -e "\033[1;34m----------------------\033[0m"
+echo -e "\033[1;34mLIL linux installer v4\033[0m"
+echo -e "\033[1;34m----------------------\033[0m"
 
 
 echo "Installing requires root privileges."
@@ -48,5 +48,5 @@ sudo wget -q --show-progress $DEP_RAW_NO_BIN/icon_li_transparent.svg \
 
 echo; echo -e "\033[1;34mDesktop file\033[0m"
 sudo wget -q --show-progress $DEP_RAW_NO_BIN/lil_linux.desktop \
-    /usr/share/applications
+    -O /usr/share/applications
 
