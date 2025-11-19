@@ -17,9 +17,9 @@ FOL=/opt/lil_linux
 
 
 
-echo -e "\033[1;34m----------------------\033[0m"
-echo -e "\033[1;34mLIL linux installer v4\033[0m"
-echo -e "\033[1;34m----------------------\033[0m"
+echo -e "\033[1;34m-------------------\033[0m"
+echo -e "\033[1;34mLIL linux installer\033[0m"
+echo -e "\033[1;34m-------------------\033[0m"
 
 
 echo
