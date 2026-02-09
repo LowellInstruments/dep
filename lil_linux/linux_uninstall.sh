@@ -4,6 +4,12 @@ clear
 echo
 
 
+# ------------------------------------------------------------------------------------------------------------------
+# you get ths installer via
+# curl https://raw.githubusercontent.com/LowellInstruments/dep/refs/heads/main/lil_linux/linux_uninstall.sh | bash
+# ------------------------------------------------------------------------------------------------------------------
+
+
 
 FOL=$HOME/.local/lil_linux
 
@@ -26,4 +32,7 @@ fi
 sudo rm /opt/lil_linux/lil_linux.bin
 sudo rm /usr/share/applications/lil_linux.desktop
 sudo rm /usr/share/icons/hicolor/scalable/apps/icon_li_transparent.svg
+
+
+echo "LIL uninstall done"
 
