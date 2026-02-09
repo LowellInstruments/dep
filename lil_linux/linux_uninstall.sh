@@ -33,3 +33,6 @@ sudo rm /opt/lil_linux/lil_linux.bin
 sudo rm /usr/share/applications/lil_linux.desktop
 sudo rm /usr/share/icons/hicolor/scalable/apps/icon_li_transparent.svg
 
+
+echo "LIL uninstall done"
+
